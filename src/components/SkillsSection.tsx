@@ -6,12 +6,12 @@ const skillCategories = [
   {
     title: "Programming",
     icon: Code,
-    skills: ["Python", "SQL"],
+    skills: ["Python", "SQL", "Java", "Go", "C/C++", "JavaScript/TypeScript"],
   },
   {
     title: "Frameworks & Libraries",
     icon: FlaskConical,
-    skills: ["Django", "Flask", "FastAPI", "Pandas", "NumPy", "Seaborn"],
+    skills: ["Django", "Flask", "FastAPI", "Pandas", "NumPy", "Seaborn", "Spring Boot", "React", "Next.js", "Angular", "Vue.js"],
   },
   {
     title: "ML & AI",

@@ -14,6 +14,12 @@ const education = [
     period: "Sep 2011 – Apr 2015",
     description: "New York, NY.",
   },
+  {
+    school: "The Harker School",
+    detail: "High School Diploma",
+    period: "2007 – 2011",
+    description: "San Jose, CA.",
+  },
 ];
 
 const EducationSection = () => {

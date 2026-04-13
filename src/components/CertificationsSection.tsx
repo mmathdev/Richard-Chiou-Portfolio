@@ -3,6 +3,36 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const certs = [
   {
+    name: "AWS Certified Machine Learning – Specialty",
+    issuer: "Amazon Web Services",
+    date: "March 2024",
+    description: "Advanced expertise in building, training, and deploying ML models on AWS using SageMaker, data pipelines, and production workflows.",
+  },
+  {
+    name: "Google Cloud Professional Machine Learning Engineer",
+    issuer: "Google Cloud",
+    date: "January 2024",
+    description: "Proficiency in designing, building, and productionizing ML models on Google Cloud Platform with BigQuery and Vertex AI.",
+  },
+  {
+    name: "Deep Learning Specialization",
+    issuer: "Coursera / DeepLearning.AI",
+    date: "November 2023",
+    description: "Comprehensive training in neural networks, CNNs, RNNs, sequence models, and computer vision applications.",
+  },
+  {
+    name: "Machine Learning Engineering for Production (MLOps)",
+    issuer: "Coursera / DeepLearning.AI",
+    date: "September 2023",
+    description: "End-to-end MLOps practices including model pipelines, deployment, monitoring, and continuous training.",
+  },
+  {
+    name: "Natural Language Processing Specialization",
+    issuer: "Coursera",
+    date: "July 2023",
+    description: "Advanced NLP techniques including sentiment analysis, machine translation, attention mechanisms, and transformer models.",
+  },
+  {
     name: "Exam P (Probability)",
     issuer: "Society of Actuaries",
     date: "September 2024",
