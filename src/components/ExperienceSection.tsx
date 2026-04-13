@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
     company: "Outlier",
+    companyLogo: "/images/outlier.png",
     role: "Lead AI/ML Engineer",
     location: "Newark, CA",
     period: "04.2024 – Present",
@@ -21,6 +21,7 @@ const experiences = [
   },
   {
     company: "StreetLight Data",
+    companyLogo: "/images/streetlight-data.png",
     role: "Founding AI/ML Engineer",
     location: "San Francisco, CA",
     period: "01.2022 – 04.2024",
@@ -37,6 +38,7 @@ const experiences = [
   },
   {
     company: "Metis",
+    companyLogo: "/images/metis.png",
     role: "Data Scientist, Instructor",
     location: "San Francisco, CA",
     period: "02.2020 - 01.2022",
@@ -48,6 +50,7 @@ const experiences = [
   },
   {
     company: "Signifyd",
+    companyLogo: "/images/signifyd.png",
     role: "AI/ML Engineer",
     location: "San Jose, CA",
     period: "10.2018 – 02.2020",
@@ -59,6 +62,7 @@ const experiences = [
   },
   {
     company: "Brain Technologies",
+    companyLogo: "/images/brain-technologies.png",
     role: "Senior Data Scientist",
     location: "San Mateo, CA",
     period: "07.2017 - 09.2018",
@@ -70,6 +74,7 @@ const experiences = [
   },
   {
     company: "xAd",
+    companyLogo: "/images/xAd.png",
     role: "Mid-level Data Scientist",
     location: "Mountain View, CA",
     period: "07.2016 - 06.2017",
@@ -81,6 +86,7 @@ const experiences = [
   },
   {
     company: "PayPal",
+    companyLogo: "/images/paypal.png",
     role: "Mobile Tools Development Intern",
     location: "San Jose, CA",
     period: "01.2014 - 06.2016",
@@ -108,15 +114,23 @@ const ExperienceSection = () => {
                 <div className="absolute left-2.5 top-6 w-3 h-3 rounded-full bg-primary hidden md:block" />
                 <Card className="bg-card/50 backdrop-blur border-border hover:border-primary/30 transition-colors">
                   <CardContent className="p-6">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
-                      <div className="flex items-center gap-2">
-                        <Briefcase size={16} className="text-primary" />
-                        <h3 className="font-semibold text-foreground text-lg">{exp.company}</h3>
+                    <div className="flex items-start gap-4 mb-4">
+                      {exp.companyLogo && (
+                        <img
+                          src={exp.companyLogo}
+                          alt={exp.company}
+                          className="w-12 h-12 rounded-lg object-cover shrink-0"
+                        />
+                      )}
+                      <div className="flex-1">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
+                          <h3 className="font-semibold text-foreground text-lg">{exp.company}</h3>
+                          <span className="text-sm text-muted-foreground">{exp.period}</span>
+                        </div>
+                        <p className="text-primary text-sm mb-1">{exp.role}</p>
+                        <p className="text-xs text-muted-foreground mb-4">{exp.location}</p>
                       </div>
-                      <span className="text-sm text-muted-foreground">{exp.period}</span>
                     </div>
-                    <p className="text-primary text-sm mb-1">{exp.role}</p>
-                    <p className="text-xs text-muted-foreground mb-4">{exp.location}</p>
                     <ul className="space-y-2 mb-4">
                       {exp.bullets.map((b, i) => (
                         <li key={i} className="text-sm text-muted-foreground flex gap-2">

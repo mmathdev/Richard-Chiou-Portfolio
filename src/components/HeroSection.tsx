@@ -11,11 +11,6 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
-        <div className="mb-6">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            Open to new opportunities
-          </span>
-        </div>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4">
           Hi, I'm{" "}
           <span className="gradient-text">Richard Chiou</span>
