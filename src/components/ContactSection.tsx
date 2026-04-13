@@ -27,7 +27,7 @@ const ContactSection = () => {
           </Button>
         </div>
         <p className="text-xs text-muted-foreground flex items-center justify-center gap-1">
-          <MapPin size={12} /> 6737 Lizardfish Way, Newark, CA 94560-5549
+          <MapPin size={12} /> 6737 Lizardfish Way, Newark, CA 94560
         </p>
       </div>
     </section>

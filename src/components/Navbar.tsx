@@ -28,8 +28,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold gradient-text">
+        <div className="flex items-center justify-between h-20">
+          <a href="#" className="text-2xl font-bold gradient-text">
             RC
           </a>
           <div className="hidden md:flex items-center gap-6">
@@ -37,7 +37,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="text-base text-muted-foreground hover:text-primary hover:underline decoration-primary underline-offset-4 transition-all duration-300"
               >
                 {link.label}
               </a>
@@ -53,12 +53,12 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden bg-background/95 backdrop-blur-lg border-b border-border">
-          <div className="px-4 py-4 flex flex-col gap-3">
+          <div className="px-4 py-6 flex flex-col gap-3">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors py-1"
+                className="text-base text-muted-foreground hover:text-primary hover:underline decoration-primary underline-offset-4 transition-all duration-300 py-1"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
