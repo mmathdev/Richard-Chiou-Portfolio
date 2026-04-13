@@ -29,8 +29,8 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
-          <a href="#" className="text-2xl font-bold gradient-text">
-            RC
+          <a href="#" className="flex items-center">
+            <img src="/images/websitelogo.png" alt="Logo" className="h-10 w-auto" />
           </a>
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (

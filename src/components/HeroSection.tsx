@@ -11,6 +11,9 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
+        <div className="mx-auto mb-6 w-32 h-32 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl shadow-primary/10">
+          <img src="/images/myavatar.png" alt="Richard Chiou avatar" className="w-full h-full object-cover" />
+        </div>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4">
           Hi, I'm{" "}
           <span className="gradient-text">Richard Chiou</span>
