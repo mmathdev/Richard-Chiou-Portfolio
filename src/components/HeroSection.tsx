@@ -53,6 +53,12 @@ const HeroSection = () => {
             <a href="#contact">Get in Touch</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="rounded-full">
+            <a href="/images/Richard_Chiou_Resume.pdf" download="Richard_Chiou_Resume.pdf">
+              <FileDown className="mr-2 h-4 w-4" />
+              Download CV
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="rounded-full">
             <a href="#projects">View Projects</a>
           </Button>
         </div>

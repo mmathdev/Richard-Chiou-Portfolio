@@ -9,6 +9,7 @@ import EducationSection from "@/components/EducationSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const Index = () => {
   const [isDragging, setIsDragging] = useState(false);
@@ -57,6 +58,7 @@ const Index = () => {
       <CertificationsSection />
       <ContactSection />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };
